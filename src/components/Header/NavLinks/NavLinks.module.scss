@@ -1,0 +1,16 @@
+@use '../../../app/styles/variables' as *;
+
+.navLinks {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.link {
+	font-size: 1rem;
+	color: $color-main;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	&:hover {
+		color: $color-main-light;
+	}
+}
