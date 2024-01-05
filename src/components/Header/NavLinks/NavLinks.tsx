@@ -27,7 +27,7 @@ const navLinksList: INavLinks[] = [
 	{
 		title: 'Contacts',
 		link: '/contacts',
-	}
+	},
 ];
 
 const NavLinks = () => {

@@ -1,6 +1,6 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
-export interface IImage  {
+export interface IImage {
 	name: string;
 	url: string | StaticImageData;
 	size?: number;

@@ -3,12 +3,14 @@
 
 .container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid $color-main;
 	height: fit-content;
 	padding: 1rem;
 	cursor : pointer;
 	&:hover .image {
-		scale: 1.05;
+		scale: 1.03;
 	}
 }
 
@@ -16,6 +18,8 @@
 	object-fit: contain;
 	overflow: hidden;
 	transition: 0.2s ease-in-out;
+	width: 18.75rem;
+	height: 18.75rem;
 }
 
 

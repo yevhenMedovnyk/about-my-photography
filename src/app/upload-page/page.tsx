@@ -35,7 +35,10 @@ const Upload = () => {
 
 	const handleUpload = () => {
 		images.forEach((image) => {
-			const storageRef = ref(storage, 'images/street_photography/kyiv/' + image.name);
+			const storageRef = ref(
+				storage,
+				'images/street_photography/kyiv/' + image.name
+			);
 			const uploadTask = uploadBytesResumable(storageRef, image.file, {
 				customMetadata: {
 					id: image.id,
@@ -71,7 +74,11 @@ const Upload = () => {
 				</select>
 				<input className={styles.input} placeholder="enter direction" />
 			</div>
-			<button onClick={handleUpload} style={{ cursor: 'pointer' }} className={styles.button}>
+			<button
+				onClick={handleUpload}
+				style={{ cursor: 'pointer' }}
+				className={styles.button}
+			>
 				Upload
 			</button>
 		</div>
