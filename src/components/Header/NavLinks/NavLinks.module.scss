@@ -1,4 +1,4 @@
-@use '../../../app/styles/variables' as *;
+@use '../../../styles/variables' as *;
 
 .navLinks {
 	display: flex;
@@ -13,4 +13,8 @@
 	&:hover {
 		color: $color-main-light;
 	}
+}
+
+.active {
+	color: $color-main-light;
 }

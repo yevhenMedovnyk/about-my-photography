@@ -2,3 +2,11 @@
 	display: flex;
 	flex: 1;
 }
+
+.container {
+	display: flex;
+	row-gap: 1.4rem;
+	flex-wrap: wrap;
+	margin: 6rem auto;
+	gap: 2rem;
+}

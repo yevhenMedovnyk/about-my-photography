@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 4rem 0;
+}
+
+.imagesContainer {
+	display: flex;
+	row-gap: 1.4rem;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 6rem auto;
+	gap: 2rem;
+}
+
+.directionContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 1.2rem;
+	row-gap: 0.7rem;
+	width: 13rem;
+}
+
+.direction {
+	height: fit-content;
+	padding: 0.5rem;
+}
+
+.input {
+	padding: 0.5rem;
+}
+
+.button {
+	padding: 1rem;
+	background-color: rgb(245, 186, 77);
+	border-radius: 5px;
+	width: 30rem;
+	margin: 0 auto;
+	transition: 0.2s ease-in-out;
+	&:hover {
+		background-color: rgb(252, 211, 133);
+	}
+}
