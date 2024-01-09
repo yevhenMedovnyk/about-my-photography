@@ -9,25 +9,25 @@ import { IFolder } from '@/types/Folder';
 
 const projects: IFolder[] = [
 	{
-		id: "1",
+		id: '1',
 		name: 'The Glass bridge',
 		url: glassBridge,
 		link: '/glass-bridge',
 	},
 	{
-		id: "2",
+		id: '2',
 		name: 'Street photography',
 		url: streetPh,
 		link: '/street-photography',
 	},
 	{
-		id: "3",
+		id: '3',
 		name: 'Street photography',
 		url: mac,
 		link: '/street-photography',
 	},
 	{
-		id: "4",
+		id: '4',
 		name: 'Street photography',
 		url: streetPh,
 		link: '/street-photography',

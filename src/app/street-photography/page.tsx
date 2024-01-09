@@ -31,7 +31,6 @@ const folders: IFolder[] = [
 ];
 
 const Street = () => {
-
 	return (
 		<div className={styles.container}>
 			<Folders folders={folders} />

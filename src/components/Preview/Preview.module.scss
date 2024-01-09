@@ -21,6 +21,16 @@
 	}
 }
 
+.container.popup {
+	&:hover .image {
+		scale: none;
+	}
+	.image {
+		height: 90vh;
+	}
+	border: none;
+}
+
 .image {
 	object-fit: contain;
 	overflow: hidden;
