@@ -2,22 +2,39 @@
 import React from 'react';
 import styles from './page.module.scss';
 
-import useGetImages from '@/hooks/useGetImages';
-import Preview from '@/components/Preview/Preview';
+import Folders from '@/components/Folders/Folders';
+
+import glassBridge from '@/assets/images/folderImg/2023.11_Kyiv_00022.jpg';
+import streetPh from '@/assets/images/folderImg/2023.12_Kyiv_00037.jpg';
+import mac from '@/assets/images/folderImg/2023.12_Kyiv_00017.jpg';
+import { IFolder } from '@/types/Folder';
+
+const folders: IFolder[] = [
+	{
+		id: '1',
+		name: 'Kyiv, Ukraine',
+		url: glassBridge,
+		link: 'street-photography/kyiv-street',
+	},
+	{
+		id: '2',
+		name: 'Spain 2020',
+		url: streetPh,
+		link: '/spain',
+	},
+	{
+		id: '3',
+		name: 'Greenland 2022',
+		url: mac,
+		link: '/greenland',
+	},
+];
 
 const Street = () => {
-	const folderPath = 'images/street_photography/kyiv/';
-	const imagesUrl = useGetImages(folderPath);
 
 	return (
-		<div>
-			<h2>Street photography</h2>
-			{imagesUrl.length > 0 &&
-				imagesUrl.map((image) => (
-					<div key={image.id} className={styles.imageContainer}>
-						<Preview key={image.id} image={image} />
-					</div>
-				))}
+		<div className={styles.container}>
+			<Folders folders={folders} />
 		</div>
 	);
 };

@@ -7,29 +7,27 @@ import mac from '@/assets/images/folderImg/2023.12_Kyiv_00017.jpg';
 import Folders from '@/components/Folders/Folders';
 import { IFolder } from '@/types/Folder';
 
-
-
 const projects: IFolder[] = [
 	{
-		id: 1,
+		id: "1",
 		name: 'The Glass bridge',
 		url: glassBridge,
 		link: '/glass-bridge',
 	},
 	{
-		id: 2,
+		id: "2",
 		name: 'Street photography',
 		url: streetPh,
 		link: '/street-photography',
 	},
 	{
-		id: 3,
+		id: "3",
 		name: 'Street photography',
 		url: mac,
 		link: '/street-photography',
 	},
 	{
-		id: 4,
+		id: "4",
 		name: 'Street photography',
 		url: streetPh,
 		link: '/street-photography',
@@ -39,7 +37,7 @@ const projects: IFolder[] = [
 export default function Home() {
 	return (
 		<main className={styles.main}>
-				<Folders folders={projects} />
+			<Folders folders={projects} />
 		</main>
 	);
 }

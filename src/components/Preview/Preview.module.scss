@@ -1,16 +1,23 @@
 @use "../../styles/variables" as *;
 
-
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid $color-main;
-	height: fit-content;
 	padding: 1rem;
-	cursor : pointer;
+	overflow: hidden;
+	cursor: pointer;
+
+	margin-bottom: 12px;
 	&:hover .image {
-		scale: 1.03;
+		scale: 1.01;
+	}
+}
+
+.container.gallery {
+	&:hover .image {
+		scale: none;
 	}
 }
 
@@ -18,8 +25,7 @@
 	object-fit: contain;
 	overflow: hidden;
 	transition: 0.2s ease-in-out;
-	width: 18.75rem;
-	height: 18.75rem;
+	width: auto;
+	height: auto;
+	transition: 0.2s ease-in-out;
 }
-
-

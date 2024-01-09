@@ -13,7 +13,7 @@ interface INavLinks {
 
 const navLinksList: INavLinks[] = [
 	{
-		title: 'Projects',
+		title: 'Home',
 		link: '/',
 	},
 	{

@@ -6,12 +6,17 @@
 }
 
 .imagesContainer {
-	display: flex;
-	row-gap: 1.4rem;
-	flex-wrap: wrap;
-	max-width: 1200px;
-	margin: 6rem auto;
-	gap: 2rem;
+	//display: flex;
+	//row-gap: 1.4rem;
+	//flex-wrap: wrap;
+	//max-width: 1200px;
+	//margin: 6rem auto;
+	//gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(20rem, 1fr));
+	place-content: center;
+	gap: 1.75rem;
+	margin: 2rem auto 3.3rem;
 }
 
 .directionContainer {

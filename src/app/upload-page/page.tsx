@@ -45,15 +45,9 @@ const Upload = () => {
 					name: image.name,
 				},
 			});
-			uploadTask.on(
-				'state_changed',
-				(e) => {
-					console.log(e);
-				},
-				(error) => {
-					console.error(error);
-				}
-			);
+			uploadTask.on('state_changed', (error) => {
+				console.error(error);
+			});
 		});
 	};
 
@@ -61,9 +55,8 @@ const Upload = () => {
 		<div className={styles.container}>
 			<input type="file" multiple onChange={handleSelect} />
 			<div className={styles.imagesContainer}>
-				{images.map((image) => (
-					<Preview key={image.id} image={image} />
-				))}
+				{images.length > 0 &&
+					images.map((image) => <Preview key={image.id} image={image} />)}
 			</div>
 			<div className={styles.directionContainer}>
 				<select className={styles.direction}>
